@@ -1,0 +1,32 @@
+.example {
+  background-color: $background-color-secondary;
+}
+
+.example__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  color: $text-color-tertiary;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__stats-value {
+  font-family: $secondary-font;
+  line-height: 24px;
+  font-size: 24px;
+}
+
+.example__stats-title {
+  line-height: 12px;
+  font-size: 12px;
+}
+
+.example__price-wrapper {
+  font-family: $secondary-font;
+  line-height: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,30 @@
+.catalogs {
+  color: $text-color-primary;
+  font-weight: $secondary-font;
+}
+
+.catalogs__item {
+  background-color: $background-color-secondary;
+}
+
+.catalogs__subtitle {
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.catalogs__description {
+  color: $text-color-tertiary;
+  font-family: $primary-font;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.catalogs__link {
+  text-transform: uppercase;
+  line-height: 16px;
+  font-size: 16px;
+
+  &:active {
+    color: rgba($text-color-primary, 0.3);
+  }
+}
