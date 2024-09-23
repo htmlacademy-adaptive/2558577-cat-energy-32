@@ -7,9 +7,71 @@
   background-color: $background-color-secondary;
 }
 
+.catalogs__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $background-color-tertiary;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .catalogs__subtitle {
   font-size: 24px;
   line-height: 37px;
+}
+
+.catalogs__item--slim .catalogs__icon {
+  &::before {
+    background-image: url("../../icons/stack.svg#cat-slim");
+    height: 36px;
+    width: 50px;
+
+    @media (min-width: $tablet-width) {
+      height: 194px;
+      width: 144px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+    }
+  }
+}
+
+.catalogs__item--pro .catalogs__icon {
+  &::before {
+    background-image: url("../../icons/stack.svg#cat-pro");
+    height: 28px;
+    width: 67px;
+
+    @media (min-width: $tablet-width) {
+      height: 112px;
+      width: 268px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+    }
+  }
 }
 
 .catalogs__description {

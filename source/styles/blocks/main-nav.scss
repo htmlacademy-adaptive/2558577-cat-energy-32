@@ -3,5 +3,9 @@
 }
 
 .main-nav__toggle {
-  display: none;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-image: url("../../icons/stack.svg#menu-show");
+  background-color: unset;
 }

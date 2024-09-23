@@ -9,8 +9,13 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="index.html" alt="Кэт Энерджи" width="200" height="100">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <img class="main-header__logo-image" src="images/logo-mobile.svg" alt="Cat Energy Logo" width="33" height="38">
+        </picture>
+        <img class="main-header__logo-text" src="images/logo-text.svg" alt="Cat Energy" width="101" height="18">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -216,7 +221,6 @@
           </ul>
 
           <div class="additional-products order-gift">
-            <div class="order-gift__icon"></div>
             <p class="order-gift__description">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </section>
@@ -254,20 +258,25 @@
           </a>
 
           <ul class="social__list">
-            <li class="social__item social__item--vk">
-              <a class="visually-hidden" href="https://vk.com/htmlacademy">vk</a>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">vk</span>
+              </a>
             </li>
-            <li class="social__item social__item--youtube">
-              <a class="visually-hidden" href="https://www.youtube.com/user/htmlacademyru">youtube</a>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">youtube</span>
+              </a>
             </li>
-            <li class="social__item social__item--telegram">
-              <a class="visually-hidden" href="https://t.me/htmlacademy">telegram</a>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">telegram</span>
+              </a>
             </li>
           </ul>
 
           <div class="main-footer__copyright copyright">
-            <a class="visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <svg class="copyright__icon" width="16" height="16"></svg>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>
       </div>

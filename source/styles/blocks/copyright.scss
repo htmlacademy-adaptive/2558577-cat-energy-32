@@ -2,4 +2,28 @@
   color: $text-color-tertiary;
   font-size: 16px;
   line-height: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-color: #666666;
+    mask-position: 50%;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-image: url("../../icons/stack.svg#html-academy");
+  }
+
+  &:hover {
+    &::after {
+      background-color: $background-color-tertiary;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
