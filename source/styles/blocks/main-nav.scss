@@ -7,7 +7,7 @@
   }
 }
 
-.main-nav__wrapper {
+.main-nav__list {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -16,6 +16,7 @@
 }
 
 .main-nav__toggle {
+  cursor: pointer;
   width: 24px;
   height: 24px;
   border: none;
@@ -25,4 +26,16 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav__toggle--close {
+  background-image: url("../../icons/stack.svg#menu-hide");
+}
+
+.main-nav__list--open {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  display: block;
 }

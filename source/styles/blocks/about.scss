@@ -1,12 +1,12 @@
 .about {
-  padding: 20px 20px 0;
+  padding: 0 20px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 82px 0 0;
+    padding: 0;
   }
 }
 
@@ -14,6 +14,7 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -66,9 +67,9 @@
       font-weight: 400;
       line-height: 280px;
       position: absolute;
-      top: 0;
       bottom: 0;
       left: 118px;
+      top: -40px;
     }
   }
 }

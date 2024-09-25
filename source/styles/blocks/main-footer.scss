@@ -26,6 +26,14 @@
   }
 }
 
+.main-footer--catalog-page {
+  background-color: $background-color-secondary;
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-color-primary;
+  }
+}
+
 .main-footer--grey {
   background-color: #f2f2f2;
 }
@@ -67,6 +75,7 @@
 }
 
 .main-footer__map {
+  overflow: hidden;
   height: 362px;
 
   @media (min-width: $tablet-width) {
