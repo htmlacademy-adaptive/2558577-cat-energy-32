@@ -1,0 +1,89 @@
+.main-footer {
+  background-color: $background-color-primary;
+  width: 100%;
+  position: relative;
+}
+
+.main-footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    padding: 61px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-color-primary;
+    width: 405px;
+    position: absolute;
+    top: 95px;
+    right: 50%;
+    margin-right: 45px;
+  }
+}
+
+.main-footer--catalog-page {
+  background-color: $background-color-secondary;
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-color-primary;
+  }
+}
+
+.main-footer--grey {
+  background-color: #f2f2f2;
+}
+
+.main-footer__invitation {
+  font-family: $secondary-font;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  flex: 1;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 163px;
+  }
+}
+
+.main-footer__address {
+  color: $text-color-tertiary;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: end;
+    max-width: 157px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.main-footer__map {
+  overflow: hidden;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.main-footer__map-image {
+  width: 100%;
+  object-fit: cover;
+}

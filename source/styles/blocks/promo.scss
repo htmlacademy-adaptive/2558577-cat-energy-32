@@ -1,0 +1,30 @@
+.promo__title {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 96px;
+  }
+}
+
+.promo__form-title {
+  font-family: $secondary-font;
+  margin: 32px auto 0;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    width: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-top: 72px;
+  }
+}

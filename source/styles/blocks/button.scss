@@ -1,0 +1,35 @@
+.button {
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.button--primary {
+  background-color: $background-color-tertiary;
+  color: $text-color-secondary;
+
+  &:hover {
+    background-color: $background-color-tertiary-hover;
+  }
+
+  &:active {
+    color: rgba($text-color-secondary, 0.3);
+  }
+}
+
+.button--secondary {
+  background-color: $background-color-secondary;
+  color: $text-color-tertiary;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+}

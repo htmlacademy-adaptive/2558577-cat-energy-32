@@ -1,0 +1,41 @@
+.main-nav {
+  display: flex;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
+.main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav__toggle {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-image: url("../../icons/stack.svg#menu-show");
+  background-color: unset;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--close {
+  background-image: url("../../icons/stack.svg#menu-hide");
+}
+
+.main-nav__list--open {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  display: block;
+}
