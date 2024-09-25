@@ -1,10 +1,44 @@
 .catalogs {
   color: $text-color-primary;
   font-weight: $secondary-font;
+  width: 280px;
+  padding: 20px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 82px 110px 110px 0;
+  }
+}
+
+.catalogs__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+    flex-flow: row wrap;
+    row-gap: 80px;
+    align-items: stretch;
+  }
 }
 
 .catalogs__item {
   background-color: $background-color-secondary;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .catalogs__icon {
@@ -36,6 +70,11 @@
 .catalogs__subtitle {
   font-size: 24px;
   line-height: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalogs__item--slim .catalogs__icon {
@@ -79,14 +118,45 @@
   font-family: $primary-font;
   line-height: 18px;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .catalogs__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   text-transform: uppercase;
   line-height: 16px;
   font-size: 16px;
 
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    background-color: $text-color-primary;
+    mask-position: 50%;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-image: url("../../icons/stack.svg#arrow");
+  }
+
+
   &:active {
     color: rgba($text-color-primary, 0.3);
+  }
+
+  &:active::after {
+    background-color: rgba($text-color-primary, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    gap: 25px;
   }
 }

@@ -1,5 +1,18 @@
 .main-nav {
   display: flex;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
+.main-nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__toggle {
@@ -8,4 +21,8 @@
   border: none;
   background-image: url("../../icons/stack.svg#menu-show");
   background-color: unset;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

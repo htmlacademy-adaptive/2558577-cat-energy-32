@@ -1,23 +1,75 @@
+.about {
+  padding: 20px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 0 0;
+  }
+}
+
 .about__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .about__item {
+  display: flex;
+  margin-left: 0;
+  color: $text-color-tertiary;
   font-size: 14px;
   line-height: 18px;
-  color: $text-color-tertiary;
+  align-items: center;
+  position: relative;
+  counter-increment: counter 1;
 
   &::before {
     content: "";
-    display: inline-block;
     background-color: $background-color-tertiary;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 30px 32px;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
+    display: inline-block;
+    margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 230px;
+    min-height: 280px;
+    flex-direction: column;
+    gap: 31px;
+    align-items: flex-start;
+
+    &::after {
+      color: #f2f2f2;
+      content: counter(counter);
+      z-index: -1;
+      font-family: $secondary-font;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 118px;
+    }
   }
 }
 
@@ -42,5 +94,23 @@
 .about__item--food {
   &::before {
     background-image: url("../../icons/stack.svg#food");
+  }
+}
+
+.about__list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    align-items: stretch;
+    gap: 153px;
+    row-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 93px;
   }
 }

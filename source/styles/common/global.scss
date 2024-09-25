@@ -1,8 +1,11 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 body {
   font-family: $primary-font;
+  color: $text-color-primary;
+  background-color: $background-color-primary;
   font-size: 18px;
   line-height: 27px;
+  margin: 0;
 }
 
 h1,

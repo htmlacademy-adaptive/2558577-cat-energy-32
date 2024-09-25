@@ -1,9 +1,25 @@
 .site-list {
   color: $text-color-primary;
   font-family: $secondary-font;
+  display: flex;
+  column-gap: 33px;
 }
 
 .site-list__item {
   font-size: 20px;
   line-height: 20px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list--white {
+  @media (min-width: $desktop-width) {
+    color: $text-color-secondary;
+  }
 }
