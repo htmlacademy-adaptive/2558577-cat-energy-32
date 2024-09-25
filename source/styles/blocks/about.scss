@@ -99,7 +99,6 @@
 }
 
 .about__list {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -114,4 +113,8 @@
   @media (min-width: $desktop-width) {
     gap: 93px;
   }
+}
+
+.about__description {
+  margin: 1px 0;
 }
