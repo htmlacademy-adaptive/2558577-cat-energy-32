@@ -12,6 +12,7 @@
 }
 
 .catalog__title {
+  font: inherit;
   font-family: $secondary-font;
   color: $text-color-primary;
   line-height: 36px;
@@ -25,6 +26,9 @@
 }
 
 .catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: grid;
 
   @media (min-width: $tablet-width) {
@@ -92,6 +96,8 @@
 }
 
 .catalog__item-title {
+  font: inherit;
+  text-decoration: none;
   margin: 0;
   text-transform: uppercase;
   width: 80px;
