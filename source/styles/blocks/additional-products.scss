@@ -12,6 +12,7 @@
 
 .additional-products__wrapper {
   @media (min-width: $desktop-width) {
+    gap: 81px;
     margin-top: 80px;
     display: flex;
     justify-content: space-between;

@@ -59,6 +59,7 @@
 }
 
 .hero__title {
+  font: inherit;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
@@ -112,6 +113,8 @@
   width: 280px;
   padding: 10px 0;
   text-align: center;
+  color: inherit;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     width: auto;
