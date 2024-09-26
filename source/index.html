@@ -14,25 +14,26 @@
   </head>
 
   <body class="page__body">
-    <header class="main-header container">
-      <a class="main-header__logo-wrapper" href="index.html">
-        <div class="main-header__logo">
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-            <img class="main-header__logo-image" src="images/logo-mobile.svg" alt="Cat Energy Logo" width="33" height="38">
-          </picture>
-        </div>
-        <div class="main-header__logo-text-wrapper">
-          <img class="main-header__logo-text" src="images/logo-text.svg" alt="Cat Energy" width="101" height="18">
-        </div>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo-wrapper" href="index.html">
+          <div class="main-header__logo">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+              <img class="main-header__logo-image" src="images/logo-mobile.svg" alt="Cat Energy Logo" width="33" height="38">
+            </picture>
+          </div>
+          <div class="main-header__logo-text-wrapper" >
+            <img class="main-header__logo-text" src="images/logo-text.svg" alt="Cat Energy" width="101" height="18">
+          </div>
+        </a>
+        <button class="main-header__toggle main-header__toggle--open main-header__toggle--no-js" type="button" id="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-
-        <ul class="main-nav__list site-list site-list--index">
+      </div>
+      <nav class="main-nav main-nav--no-js" id="main-nav">
+        <ul class="main-nav__list site-list site-list--white" id="nav">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link" href="index.html">
               Главная
