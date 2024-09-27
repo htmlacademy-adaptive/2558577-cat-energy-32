@@ -40,12 +40,18 @@
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: $bg-border-color-value;
   }
 
   &:focus {
     border: solid 2px #444444;
   }
+}
+
+.form__input--error,
+.form__input--error:hover,
+.form__input--error:focus {
+  border: solid 2px #ff8282;
 }
 
 .form__button {
