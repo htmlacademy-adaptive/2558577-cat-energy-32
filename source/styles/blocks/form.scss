@@ -12,7 +12,7 @@
     margin-bottom: 80px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 752px;
     margin-bottom: 104px;
   }
@@ -28,7 +28,7 @@
   outline: none;
   height: 56px;
   width: 100%;
-  padding: 18px 13px 13px;
+  padding: 23px 13px 13px;
   box-sizing: border-box;
   flex-shrink: 1;
 
@@ -55,9 +55,11 @@
 }
 
 .form__button {
-  padding: 15px 0;
+  padding: 18px 0;
+  font-size: 20;
 
   @media (min-width: $tablet-width) {
     width: 256px;
+    padding: 15px 0;
   }
 }

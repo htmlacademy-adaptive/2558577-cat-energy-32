@@ -10,7 +10,7 @@
     background-color: #68b738;
     height: 2px;
     width: 100%;
-    top: 50%;
+    top: 58%;
     z-index: -1;
   }
 }
@@ -38,13 +38,14 @@
   display: inline-block;
 
   @media (min-width: $tablet-width) {
-    padding: 0 20px 0 40px;
+    padding: 0 40px;
     line-height: 32px;
     font-size: 32px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
+    margin-left: -38px;
     line-height: 40px;
     font-size: 40px;
   }
