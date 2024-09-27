@@ -9,9 +9,8 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    width: 164px;
   }
-
   &::after {
     content: "";
     background-color: #666666;

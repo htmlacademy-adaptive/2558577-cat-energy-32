@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px;
+    padding: 55px 0;
   }
 }
 
@@ -50,6 +50,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+  }
 }
 
 .main-header__logo {
@@ -60,9 +64,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 13px;
   }
+}
 
+.main-header__logo-text {
   @media (min-width: $desktop-width) {
-    margin-left: 14px;
     height: 21px;
     width: 118px;
   }
@@ -75,6 +80,7 @@
   background-color: unset;
   height: 24px;
   width: 24px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -83,6 +89,9 @@
 
 .main-header__toggle--close {
   background-image: url("../../icons/stack.svg#menu-hide");
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
 }
 
 .main-header__toggle--no-js {

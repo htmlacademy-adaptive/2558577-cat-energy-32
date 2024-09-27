@@ -74,7 +74,7 @@
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, 50%);
-  padding: 24px 0 21px;
+  padding: 20px 0 21px;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: 242px 1fr auto;
@@ -87,7 +87,7 @@
 
 .catalog__item-image {
   grid-row: 1 / -2;
-  margin: 10px auto;
+  place-self: center;
 
   @media (min-width: $tablet-width) {
     grid-row: 1 / 2;
@@ -95,10 +95,15 @@
   }
 }
 
+.catalog__item-image img {
+  height: 103px;
+  object-fit: contain;
+}
+
 .catalog__item-title {
   font: inherit;
   text-decoration: none;
-  margin: 0;
+  margin-bottom: 6px;
   text-transform: uppercase;
   width: 80px;
   font-family: $secondary-font;
@@ -153,7 +158,7 @@
 .catalog__item-button {
   grid-column: 1 / -1;
   padding: 10px 0;
-  margin-top: 17px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     line-height: 20px;
