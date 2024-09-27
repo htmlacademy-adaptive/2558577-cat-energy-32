@@ -1,8 +1,9 @@
 .additional-products__title {
-  margin-top: 25px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 74px;
+    margin-top: 71px;
+    height: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,7 +14,7 @@
 .additional-products__wrapper {
   @media (min-width: $desktop-width) {
     gap: 81px;
-    margin-top: 80px;
+    margin-top: 83px;
     display: flex;
     justify-content: space-between;
   }
