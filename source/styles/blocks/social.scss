@@ -14,7 +14,7 @@
     max-width: 708px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 36px 68px;
+    padding: 36px 0;
     gap: 120px;
   }
 
@@ -65,7 +65,7 @@
   padding: 20px 0;
   gap: 24px;
   row-gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .social__link {

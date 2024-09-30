@@ -182,8 +182,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
     gap: 80px;
     padding: 82px 0 71px;
+    flex-flow: wrap row;
   }
 }
