@@ -18,9 +18,10 @@
   color: $text-color-primary;
   line-height: 36px;
   font-size: 36px;
-  margin: 28px auto 41px;
+  margin: 26px auto 41px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 28px;
     line-height: 60px;
     font-size: 60px;
     margin-bottom: 84px;

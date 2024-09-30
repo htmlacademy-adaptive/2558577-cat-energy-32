@@ -26,10 +26,11 @@
 }
 
 .button--secondary {
-  background-color: $background-color-secondary;
+  background-color: $bg-color-button-secondary;
   color: $text-color-tertiary;
 
-  &:hover {
+  &:hover,
+  &:active {
     background-color: #ebebeb;
   }
 }
